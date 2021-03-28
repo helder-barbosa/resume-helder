@@ -48,7 +48,7 @@ const Index = ({ repos, user }) => {
 
       <h3 className='text-2xl font-bold font-sans my-2'>Meus repositórios no GitHub :</h3>
 
-      <pre className="grid grid-cols-2">{repos.map(repo => {
+      <pre className=" flex flex-wrap sm:grid grid-cols-2">{repos.map(repo => {
         return (
           <div key={repo.id} className=' rounded-xl border bg-gray-100 mx-4 my-4 p-4 hover:shadow-lg'>
             <h3 className='font-bold text-lg'><a href={repo.html_url}>{repo.full_name}</a></h3>
