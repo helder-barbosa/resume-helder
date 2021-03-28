@@ -7,7 +7,7 @@ const Index = ({ repos, user }) => {
       <ul className="flex justify-between">
         <li>
           <div className="ml-4">
-            <h1 className='text-5xl font-bold font-sans my-2'>Helder Barbosa</h1>
+            <h1 className=' text-4xl sm:text-5xl font-bold font-sans my-2'>Helder Barbosa</h1>
             <p className='text-lg font-bold'><a href={user.blog}>{user.blog}</a></p>
             <p className='text-lg'>{user.location}</p>
           </div>
@@ -46,13 +46,16 @@ const Index = ({ repos, user }) => {
 
 
 
-      <h3 className='text-2xl font-bold font-sans my-2'>Meus repositórios no GitHub :</h3>
+      <h3 className='text-2xl font-bold font-sans text-center my-2'>Meus repositórios no GitHub :</h3>
 
-      <pre className=" flex flex-wrap sm:grid grid-cols-2">{repos.map(repo => {
+      <pre className=" block flex-wrap sm:grid grid-cols-2">{repos.map(repo => {
         return (
-          <div key={repo.id} className=' rounded-xl border bg-gray-100 mx-4 my-4 p-4 hover:shadow-lg'>
-            <h3 className='font-bold text-lg'><a href={repo.html_url}>{repo.full_name}</a></h3>
-            <p>Language: {repo.language} / updated : {repo.updated_at.split('T', 1)}</p>
+          <div key={repo.id} className=' rounded-xl border bg-gray-100 mx-4 my-4 p-5 hover:shadow-lg'>
+            <h3 className='font-bold text-lg flex-nowrap'><a href={repo.html_url}>{repo.full_name}</a></h3>
+            <ul>
+              <li>Language: {repo.language}</li>
+              <li>Updated : {repo.updated_at.split('T', 1)}</li>
+            </ul>
           </div>
         )
       })}
