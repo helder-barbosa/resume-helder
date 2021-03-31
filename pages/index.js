@@ -3,21 +3,23 @@ import getUser from '../utils/getUser'
 
 const Index = ({ repos, user }) => {
   return (
-    <div className='container mx-auto'>
-      <ul className="flex justify-between">
-        <li>
-          <div className="ml-4">
-            <h1 className=' text-4xl sm:text-5xl font-bold font-sans my-2'>Helder Barbosa</h1>
-            <p className='text-lg font-bold'><a href={user.blog}>{user.blog}</a></p>
-            <p className='text-lg'>{user.location}</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img className=" mt-2 mr-4 rounded-xl shadow-xl" id="profile-photo" src="https://media-exp1.licdn.com/dms/image/C5603AQGRfXT5yTyCSw/profile-displayphoto-shrink_800_800/0/1593634089642?e=1622073600&v=beta&t=9wBlVClqU8vTKFW9t11RL28Qc9aqZTRWCjlE7qc1gO4" alt="Helder Barbosa photograph" />
-          </div>
-        </li>
-      </ul>
+    <div id='header' className='container mx-auto'>
+      <div>
+        <ul className="flex justify-between">
+          <li>
+            <div className="ml-4">
+              <h1 className=' text-4xl sm:text-5xl font-bold font-sans my-2'>Helder Barbosa</h1>
+              <p className='text-lg font-bold'><a href={user.blog}>{user.blog}</a></p>
+              <p className='text-lg'>{user.location}</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img className=" mt-2 mr-4 rounded-xl shadow-xl" id="profile-photo" src="https://media-exp1.licdn.com/dms/image/C5603AQGRfXT5yTyCSw/profile-displayphoto-shrink_800_800/0/1593634089642?e=1622073600&v=beta&t=9wBlVClqU8vTKFW9t11RL28Qc9aqZTRWCjlE7qc1gO4" alt="Helder Barbosa photograph" />
+            </div>
+          </li>
+        </ul>
+      </div>
 
       <div className=" text-center">
         <h3 className='text-2xl font-bold font-sans my-2'>My Education</h3>
@@ -50,8 +52,8 @@ const Index = ({ repos, user }) => {
 
       <pre className=" block flex-wrap sm:grid grid-cols-2">{repos.map(repo => {
         return (
-          <div key={repo.id} className=' rounded-xl border bg-gray-100 mx-4 my-4 p-5 hover:shadow-lg'>
-            <h3 className='font-bold text-lg flex-nowrap'><a href={repo.html_url}>{repo.full_name}</a></h3>
+          <div key={repo.id} className=' rounded-xl border bg-gray-100 p-6 mx-3 my-3 sm:mx-4 my-4 p-5 hover:shadow-lg'>
+            <h3 className='font-bold sm:text-lg flex-nowrap'><a href={repo.html_url}>{repo.full_name}</a></h3>
             <ul>
               <li>Language: {repo.language}</li>
               <li>Updated : {repo.updated_at.split('T', 1)}</li>

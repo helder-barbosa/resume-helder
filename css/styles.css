@@ -6,6 +6,10 @@ html {
   background-image: linear-gradient(65deg, #8EC5FC 0%, #E0C3FC 100%);
 }
 
+#header{
+  background: url(/img/art.png) no-repeat top center;
+}
+
 #profile-photo {
   height: 150px;
   width: 150px;
