@@ -26,8 +26,8 @@ const Index = ({ repos, user }) => {
         <div className=" rounded-xl border bg-gray-100 mx-4 my-4 p-4 hover:shadow-lg" >
           <ul className="grid grid-cols-2">
             <li>
-              <div>
-                <h5 className="text-lg font-bold font-sans">Graduação</h5>
+              <div className='font-sans'>
+                <h5 className="text-lg font-bold ">Graduação</h5>
                 <p>Análise e Desenvolvimento de Sistemas</p>
                 <p>Universidade Tiradentes</p>
                 <p>2018 - 2021</p>
@@ -35,9 +35,9 @@ const Index = ({ repos, user }) => {
               </div>
             </li>
             <li>
-              <div>
-                <h5 className="text-lg font-bold font-sans">Curso Técnico</h5>
-                <p>Full Stack Master</p>
+              <div className=' font-sans'>
+                <h5 className="text-lg font-bold">Curso Técnico</h5>
+                <p>FullStack Master</p>
                 <p>devPleno</p>
                 <p>2020 - 2021</p>
               </div>
@@ -52,8 +52,8 @@ const Index = ({ repos, user }) => {
 
       <pre className=" block flex-wrap sm:grid grid-cols-2">{repos.map(repo => {
         return (
-          <div key={repo.id} className=' rounded-xl border bg-gray-100 p-6 mx-3 my-3 sm:mx-4 my-4 p-5 hover:shadow-lg'>
-            <h3 className='font-bold sm:text-lg flex-nowrap'><a href={repo.html_url}>{repo.full_name}</a></h3>
+          <div key={repo.id} className=' font-sans rounded-xl border bg-gray-100 p-6 mx-3 my-3 sm:mx-4 my-4 p-5 hover:shadow-lg'>
+            <h3 className=' italic font-bold sm:text-lg flex-nowrap'><a href={repo.html_url}>{repo.full_name}</a></h3>
             <ul>
               <li>Language: {repo.language}</li>
               <li>Updated : {repo.updated_at.split('T', 1)}</li>
