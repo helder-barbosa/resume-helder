@@ -9,8 +9,11 @@ const Index = ({ repos, user }) => {
           <li>
             <div className="ml-4">
               <h1 className=' text-4xl sm:text-5xl font-bold font-sans my-2'>Helder Barbosa</h1>
-              <p className='text-lg font-bold'><a href={user.blog}>{user.blog}</a></p>
-              <p className='text-lg'>{user.location}</p>
+              <h2 className='text-2xl font-bold uppercase sm:text-3xl'>FullStack Developer</h2>
+              <div className=' flex justify-around my-2 p-3 mx-auto rounded-xl border'>
+                <a href='https://github.com/helder-barbosa'><img src='/img/Github.svg' alt="Helder's Github" /></a>
+                <a href='https://www.linkedin.com/in/helder-barbosa1/'><img src='/img/Linkedin.svg' alt="Helder's LinkedIn" /></a>
+              </div>
             </div>
           </li>
           <li>
@@ -19,6 +22,18 @@ const Index = ({ repos, user }) => {
             </div>
           </li>
         </ul>
+      </div>
+
+      <div className=" text-center">
+        <h3 className='text-2xl font-bold font-sans my-2'>What I Do ?</h3>
+        <div className=" rounded-xl border bg-gray-100 mx-4 my-4 p-4 hover:shadow-lg" >
+          <p className=' text-base font-semibold p-3' >
+            FullStack Developer with knowledge in JavaScript, NodeJS and ReactJS.
+            Undergraduated in System Analysis and Development, concluding in 2021.
+            Hungry to Learn all the things that will improve my skills.
+
+          </p>
+        </div>
       </div>
 
       <div className=" text-center">
