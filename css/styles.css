@@ -7,7 +7,7 @@ html {
 }
 
 #header{
-  background: url(/img/art.png) no-repeat top center;
+  background: url(/static/art.png) no-repeat top center;
 }
 
 #profile-photo {

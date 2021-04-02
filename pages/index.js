@@ -1,9 +1,14 @@
 import React from 'react'
 import getUser from '../utils/getUser'
+import Head from 'next/head'
 
 const Index = ({ repos, user }) => {
   return (
     <div id='header' className='container mx-auto'>
+      <Head>
+        <title>Helder Barbosa - FullStack Developer</title>
+        <link rel="icon" href="/static/favicon.ico" />
+      </Head>
       <div>
         <ul className="flex justify-between">
           <li>
@@ -11,8 +16,8 @@ const Index = ({ repos, user }) => {
               <h1 className=' text-4xl sm:text-5xl font-bold font-sans my-2'>Helder Barbosa</h1>
               <h2 className='text-2xl font-bold uppercase sm:text-3xl'>FullStack Developer</h2>
               <div className=' flex justify-around my-2 p-3 mx-auto rounded-xl border'>
-                <a href='https://github.com/helder-barbosa'><img src='/img/Github.svg' alt="Helder's Github" /></a>
-                <a href='https://www.linkedin.com/in/helder-barbosa1/'><img src='/img/Linkedin.svg' alt="Helder's LinkedIn" /></a>
+                <a href='https://github.com/helder-barbosa'><img src='/static/Github.svg' alt="Helder's Github" /></a>
+                <a href='https://www.linkedin.com/in/helder-barbosa1/'><img src='/static/Linkedin.svg' alt="Helder's LinkedIn" /></a>
               </div>
             </div>
           </li>
