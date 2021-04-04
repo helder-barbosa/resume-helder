@@ -15,9 +15,11 @@ const Index = ({ repos, user }) => {
             <div className="ml-4">
               <h1 className=' text-4xl sm:text-5xl font-bold font-sans my-2'>Helder Barbosa</h1>
               <h2 className='text-2xl font-bold uppercase sm:text-3xl'>FullStack Developer</h2>
-              <div className=' flex justify-around my-2 p-3 mx-auto rounded-xl border'>
-                <a href='https://github.com/helder-barbosa'><img src='/static/Github.svg' alt="Helder's Github" /></a>
-                <a href='https://www.linkedin.com/in/helder-barbosa1/'><img src='/static/Linkedin.svg' alt="Helder's LinkedIn" /></a>
+              <div className='mt-6'>
+                <div className=' flex justify-around my-2 p-3 mx-auto rounded-xl border bg-gray-100 '>
+                  <a href='https://github.com/helder-barbosa'><img src='/static/Github.svg' alt="Helder's Github" /></a>
+                  <a href='https://www.linkedin.com/in/helder-barbosa1/'><img src='/static/Linkedin.svg' alt="Helder's LinkedIn" /></a>
+                </div>
               </div>
             </div>
           </li>
@@ -66,13 +68,15 @@ const Index = ({ repos, user }) => {
         </div>
       </div>
 
-
-
       <h3 className='text-2xl font-bold font-sans text-center my-2'>My repositories on GitHub :</h3>
 
-      <pre className=" block flex-wrap sm:grid grid-cols-2">{repos.map(repo => {
+      <pre className=" block flex-wrap sm:grid grid-cols-3">{repos.map(repo => {
         return (
-          <div key={repo.id} className=' font-sans rounded-xl border bg-gray-100 p-6 mx-3 my-3 sm:mx-4 my-4 p-5 hover:shadow-lg'>
+          <div
+            key={repo.id}
+            className=' font-sans rounded-xl border 
+            bg-gray-100 p-5 mx-2 my-2 sm:mx-3 my-3 
+            p-4 hover:shadow-lg'>
             <h3 className=' italic font-bold sm:text-lg flex-nowrap'><a href={repo.html_url}>{repo.full_name}</a></h3>
             <ul>
               <li>Language: {repo.language}</li>
