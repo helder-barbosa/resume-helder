@@ -34,7 +34,7 @@ const Index = ({ repos, user }) => {
         <div className=" rounded-xl border bg-gray-100 mx-4 my-4 p-4 hover:shadow-lg" >
           <p className=' text-base font-semibold p-3' >
             FullStack Developer with knowledge in JavaScript, NodeJS and ReactJS.
-            Undergraduated in System Analysis and Development, concluding in 2021.
+            Undergraduate in System Analysis and Development, concluding in 2021.
             Hungry to Learn all the things that will improve my skills.
 
           </p>
@@ -47,8 +47,8 @@ const Index = ({ repos, user }) => {
           <ul className="grid grid-cols-2">
             <li>
               <div className='font-sans'>
-                <h5 className="text-lg font-bold ">Graduação</h5>
-                <p>Análise e Desenvolvimento de Sistemas</p>
+                <h5 className="text-lg font-bold ">Undergraduate</h5>
+                <p>System Analysis and Development</p>
                 <p>Universidade Tiradentes</p>
                 <p>2018 - 2021</p>
 
@@ -56,7 +56,7 @@ const Index = ({ repos, user }) => {
             </li>
             <li>
               <div className=' font-sans'>
-                <h5 className="text-lg font-bold">Curso Técnico</h5>
+                <h5 className="text-lg font-bold">Programming Course</h5>
                 <p>FullStack Master</p>
                 <p>devPleno</p>
                 <p>2020 - 2021</p>
@@ -68,7 +68,7 @@ const Index = ({ repos, user }) => {
 
 
 
-      <h3 className='text-2xl font-bold font-sans text-center my-2'>Meus repositórios no GitHub :</h3>
+      <h3 className='text-2xl font-bold font-sans text-center my-2'>My repositories on GitHub :</h3>
 
       <pre className=" block flex-wrap sm:grid grid-cols-2">{repos.map(repo => {
         return (
@@ -82,7 +82,6 @@ const Index = ({ repos, user }) => {
         )
       })}
       </pre>
-
     </div>
   )
 }
