@@ -9,9 +9,3 @@ html {
 #header{
   background: url(/static/art.png) no-repeat top center;
 }
-
-#profile-photo {
-  height: 150px;
-  width: 150px;
-  max-width: none;
-}

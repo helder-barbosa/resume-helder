@@ -9,31 +9,29 @@ const Index = ({ repos, user }) => {
         <title>Helder Barbosa - FullStack Developer</title>
         <link rel="icon" href="/static/favicon.ico" />
       </Head>
-      <div>
-        <ul className="flex justify-between">
-          <li>
-            <div className="ml-4">
-              <h1 className=' text-4xl sm:text-5xl font-bold font-sans my-2'>Helder Barbosa</h1>
-              <h2 className='text-2xl font-bold uppercase sm:text-3xl'>FullStack Developer</h2>
-              <div className='mt-6'>
-                <div className=' flex justify-around my-2 p-3 mx-auto rounded-xl border bg-gray-100 '>
-                  <a href='https://github.com/helder-barbosa'><img src='/static/Github.svg' alt="Helder's Github" /></a>
-                  <a href='https://www.linkedin.com/in/helder-barbosa1/'><img src='/static/Linkedin.svg' alt="Helder's LinkedIn" /></a>
-                </div>
-              </div>
+
+      <div className=" flex-wrap sm:flex justify-between">
+        <div className="ml-4">
+          <div className='mx-3 sm:mx-auto'>
+            <h1 className=' text-4xl sm:text-5xl font-light uppercase font-sans my-2'>Helder Barbosa</h1>
+            <h2 className='text-2xl font-bold uppercase sm:text-3xl'>FullStack Developer</h2>
+          </div>
+
+          <div className='mt-6'>
+            <div className=' flex justify-around my-2 p-3 mx-3 sm:mx-auto rounded-xl border bg-gray-100 '>
+              <a href='https://github.com/helder-barbosa'><img src='/static/Github.svg' alt="Helder's Github" /></a>
+              <a href='https://www.linkedin.com/in/helder-barbosa1/'><img src='/static/Linkedin.svg' alt="Helder's LinkedIn" /></a>
             </div>
-          </li>
-          <li>
-            <div>
-              <img className=" mt-2 mr-4 rounded-xl shadow-xl" id="profile-photo" src="https://media-exp1.licdn.com/dms/image/C5603AQGRfXT5yTyCSw/profile-displayphoto-shrink_800_800/0/1593634089642?e=1622073600&v=beta&t=9wBlVClqU8vTKFW9t11RL28Qc9aqZTRWCjlE7qc1gO4" alt="Helder Barbosa photograph" />
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
+
+        <div>
+          <img className=" mx-auto sm:mt-2 mr-4 w-56" id="profile-photo" src="/static/photo.png" alt="Helder Barbosa photograph" />
+        </div>
       </div>
 
       <div className=" text-center">
-        <h3 className='text-2xl font-bold font-sans my-2'>What I Do ?</h3>
-        <div className=" rounded-xl border bg-gray-100 mx-4 my-4 p-4 hover:shadow-lg" >
+        <div className=" rounded-xl border bg-gray-100 mx-4 mb-4 p-4 hover:shadow-lg" >
           <p className=' text-base font-semibold p-3' >
             FullStack Developer with knowledge in JavaScript, NodeJS and ReactJS.
             Undergraduate in System Analysis and Development, concluding in 2021.
