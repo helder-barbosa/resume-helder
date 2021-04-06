@@ -25,14 +25,15 @@ const Index = ({ repos, user }) => {
           </div>
         </div>
 
-        <div>
+        <div className='justify-center'>
           <img className=" mx-auto sm:mt-2 mr-4 w-56" id="profile-photo" src="/static/photo.png" alt="Helder Barbosa photograph" />
         </div>
       </div>
 
+
       <div className=" text-center">
         <div className=" rounded-xl border bg-gray-100 mx-4 mb-4 p-4 hover:shadow-lg" >
-          <p className=' text-base font-semibold p-3' >
+          <p className=' sm:text-xl text-base font-semibold p-3' >
             FullStack Developer with knowledge in JavaScript, NodeJS and ReactJS.
             Undergraduate in System Analysis and Development, concluding in 2021.
             Hungry to Learn all the things that will improve my skills.
