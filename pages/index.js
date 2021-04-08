@@ -24,12 +24,13 @@ const Index = ({ repos, user }) => {
             </div>
           </div>
         </div>
-
-        <div className='justify-center'>
-          <img className=" mx-auto sm:mt-2 mr-4 w-56" id="profile-photo" src="/static/photo.png" alt="Helder Barbosa photograph" />
-        </div>
       </div>
 
+      <div>
+        <img className=" mx-auto w-64"
+          id="profile-photo"
+          src="/static/photo.png" alt="Helder Barbosa photograph" />
+      </div>
 
       <div className=" text-center">
         <div className=" rounded-xl border bg-gray-100 mx-4 mb-4 p-4 hover:shadow-lg" >
