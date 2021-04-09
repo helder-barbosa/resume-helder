@@ -1,6 +1,8 @@
 import React from 'react'
 import getUser from '../utils/getUser'
 import Head from 'next/head'
+import Header from '../components/Header'
+import Education from '../components/Education'
 
 const Index = ({ repos, user }) => {
   return (
@@ -10,21 +12,7 @@ const Index = ({ repos, user }) => {
         <link rel="icon" href="/static/favicon.ico" />
       </Head>
 
-      <div className=" flex-wrap sm:flex justify-between">
-        <div className="ml-4">
-          <div className='mx-3 sm:mx-auto'>
-            <h1 className=' text-4xl sm:text-5xl font-light uppercase font-sans my-2'>Helder Barbosa</h1>
-            <h2 className='text-2xl font-bold uppercase sm:text-3xl'>FullStack Developer</h2>
-          </div>
-
-          <div className='mt-6'>
-            <div className=' flex justify-around my-2 p-3 mx-3 sm:mx-auto rounded-xl border bg-gray-100 '>
-              <a href='https://github.com/helder-barbosa'><img src='/static/Github.svg' alt="Helder's Github" /></a>
-              <a href='https://www.linkedin.com/in/helder-barbosa1/'><img src='/static/Linkedin.svg' alt="Helder's LinkedIn" /></a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Header />
 
       <div>
         <img className=" mx-auto w-64"
@@ -43,30 +31,7 @@ const Index = ({ repos, user }) => {
         </div>
       </div>
 
-      <div className=" text-center">
-        <h3 className='text-2xl font-bold font-sans my-2'>My Education</h3>
-        <div className=" rounded-xl border bg-gray-100 mx-4 my-4 p-4 hover:shadow-lg" >
-          <ul className="grid grid-cols-2">
-            <li>
-              <div className='font-sans'>
-                <h5 className="text-lg font-bold ">Undergraduate</h5>
-                <p>System Analysis and Development</p>
-                <p>Universidade Tiradentes</p>
-                <p>2018 - 2021</p>
-
-              </div>
-            </li>
-            <li>
-              <div className=' font-sans'>
-                <h5 className="text-lg font-bold">Programming Course</h5>
-                <p>FullStack Master</p>
-                <p>devPleno</p>
-                <p>2020 - 2021</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Education />
 
       <h3 className='text-2xl font-bold font-sans text-center my-2'>My repositories on GitHub :</h3>
 
