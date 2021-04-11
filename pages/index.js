@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Education from '../components/Education'
 import Footer from '../components/Footer'
+import Summary from '../components/Summary'
 
 const Index = ({ repos, user }) => {
   return (
@@ -22,21 +23,11 @@ const Index = ({ repos, user }) => {
             src="/static/photo.png" alt="Helder Barbosa photograph" />
         </div>
 
-        <div className=" text-center">
-          <div className=" rounded-xl border bg-gray-100 mx-4 mb-4 p-4 hover:shadow-lg" >
-            <p className=' sm:text-xl text-base font-semibold p-3' >
-              FullStack Developer with knowledge in JavaScript, NodeJS and ReactJS.
-              Undergraduate in System Analysis and Development, concluding in 2021.
-              Hungry to Learn all the things that will improve my skills.
-
-          </p>
-          </div>
-        </div>
+        <Summary />
 
         <Education />
 
         <h3 className='text-2xl font-bold font-sans text-center my-2'>My repositories on GitHub :</h3>
-
         <pre className=" block flex-wrap sm:grid grid-cols-3">{repos.map(repo => {
           return (
             <div
