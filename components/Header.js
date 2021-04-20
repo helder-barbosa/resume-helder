@@ -12,8 +12,8 @@ const Header = () => {
 
         <div className='mt-6'>
           <div className=' flex justify-around my-2 p-3 mx-3 sm:mx-auto rounded-xl border bg-gray-100 '>
-            <a href='https://github.com/helder-barbosa'><img src='/static/Github.svg' alt="Helder's Github" /></a>
-            <a href='https://www.linkedin.com/in/helder-barbosa1/'><img src='/static/Linkedin.svg' alt="Helder's LinkedIn" /></a>
+            <a href='https://github.com/helder-barbosa' ><img src='/static/Github.svg' className="rounded-2xl  hover:bg-yellow-300 " alt="Helder's Github" /></a>
+            <a href='https://www.linkedin.com/in/helder-barbosa1/' ><img src='/static/Linkedin.svg' className="rounded-2xl  hover:bg-yellow-300" alt="Helder's LinkedIn" /></a>
           </div>
         </div>
       </div>
