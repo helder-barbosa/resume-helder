@@ -1,9 +1,6 @@
 # resume-helder
 
 
-[![HitCount](https://hits.dwyl.com/helder-barbosa/helder-barbosa/resume-helder.svg)](https://hits.dwyl.com/helder-barbosa/helder-barbosa/resume-helder)
-
-
 ## Início
 
 Personal Portfolio.
