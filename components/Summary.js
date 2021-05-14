@@ -7,8 +7,7 @@ const Summary = () => {
         <p className=' sm:text-xl text-base font-semibold p-3' >
           FullStack Developer with knowledge in JavaScript, NodeJS and ReactJS.
           Undergraduate in System Analysis and Development, concluding in 2021.
-          Hungry to Learn all the things that will improve my skills.
-            </p>
+        </p>
       </div>
     </div>
   )
