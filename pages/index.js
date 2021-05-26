@@ -35,7 +35,7 @@ const Index = ({ repos, user }) => {
               className=' font-sans rounded-xl border 
             bg-gray-100 p-5 mx-2 my-2 sm:mx-3 my-3 
             p-4 hover:shadow-lg'>
-              <h3 className=' italic font-bold sm:text-lg flex-nowrap hover:text-yellow-500'><a href={repo.html_url}>{repo.full_name}</a></h3>
+              <h3 className=' truncate italic font-bold sm:text-lg flex-nowrap hover:text-yellow-500'><a href={repo.html_url}>{repo.full_name}</a></h3>
               <ul>
                 <li>Language: {repo.language}</li>
                 <li>Updated : {repo.updated_at.split('T', 1)}</li>
