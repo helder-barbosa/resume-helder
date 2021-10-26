@@ -8,7 +8,7 @@ const Education = () => {
         <ul className="grid grid-cols-2">
           <li>
             <div className='font-sans text-lg sm:text-2xl'>
-              <h5 className=" font-bold ">Undergraduate</h5>
+              <h5 className=" font-bold ">University Degree</h5>
               <p>System Analysis and Development</p>
               <p>Universidade Tiradentes</p>
               <p>2018 - 2021</p>
