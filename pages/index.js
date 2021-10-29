@@ -27,8 +27,8 @@ const Index = ({ repos, user }) => {
 
         <Education />
 
-        <h3 className='text-2xl font-bold font-sans text-center my-2'>My repositories on GitHub :</h3>
-        <pre className=" block flex-wrap sm:grid grid-cols-3">{repos.map(repo => {
+        <h3 className='text-2xl font-bold font-sans text-center my-2'>Last Updates on GitHub :</h3>
+        <pre className=" block flex-wrap sm:grid grid-cols-3">{repos.slice(0, 9).map(repo => {
           return (
             <div
               key={repo.id}
